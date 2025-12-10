@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int countNumberOfZeros(FILE *fp) {
-    char* rotation;
+    char *rotation;
     int currentRot = 50, timesZero = 0;
 
     while (fscanf(fp, "%s", rotation) == 1) {
