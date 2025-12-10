@@ -6,10 +6,10 @@ int countNumberOfZeros(FILE *fp) {
     int currentRot = 50, timesZero = 0;
 
     while (fscanf(fp, "%s", rotation) == 1) {
-    	char *substr = rotation + 1;
-    	int r;
-        if (rotation[0] == 'L')			r = -1 * atoi(substr);
-        else if (rotation[0] == 'R')	r = atoi(substr);
+        char *substr = rotation + 1;
+        int r;
+        if (rotation[0] == 'L')         r = -1 * atoi(substr);
+        else if (rotation[0] == 'R')    r = atoi(substr);
 
         currentRot += r;
         currentRot = currentRot % 100;
