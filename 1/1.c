@@ -19,17 +19,15 @@ int countNumberOfZeros(FILE *fp) {
 
 int main() {
     FILE *fp;
-    char *mode = "r";
     char *inFile = "input";
 
-    fp = fopen(inFile, mode);
+    fp = fopen(inFile, "r");
     if (fp == NULL) {
         fprintf(stderr, "Can't open input file %s!\n", inFile);
         exit(1);
     }
 
-    int timesZero = countNumberOfZeros(fp);
-    printf("timesZero is %d\n", timesZero);
+    printf("timesZero is %d\n", countNumberOfZeros(fp));
 
     fclose(fp);
 }
