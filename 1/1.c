@@ -30,4 +30,5 @@ int main() {
     printf("timesZero is %d\n", countNumberOfZeros(fp));
 
     fclose(fp);
+    return 0;
 }
